@@ -284,37 +284,6 @@ class _PageViewWidgetState extends State<PageViewWidget> {
       );
 }
 
-Container _selectCardLike(SelectObject selectObjectTeam) {
-  return Container(
-    margin: EdgeInsets.symmetric(vertical: 10),
-    child: Row(
-      children: [
-        Flexible(
-          flex: 2,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(50),
-            child: Image.network(
-              selectObjectTeam.imageUrl,
-              height: 50,
-              width: 50,
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 10,
-        ),
-        Flexible(
-          flex: 8,
-          child: ClipRRect(
-            child: Text(selectObjectTeam.title),
-          ),
-        ),
-      ],
-    ),
-  );
-}
-
 Container _selectCard(SelectObject selectObject) {
   return Container(
     margin: EdgeInsets.symmetric(vertical: 10),

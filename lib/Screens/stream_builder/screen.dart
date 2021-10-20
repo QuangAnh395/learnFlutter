@@ -45,7 +45,7 @@ class _MainStreamScreenState extends State<MainStreamScreen> {
         ),
         padding: EdgeInsets.only(top: 10),
         child: StreamBuilder<List<User>>(
-          stream: _listUserStream
+          stream: _listUserStream,
           builder: (BuildContext context, AsyncSnapshot<List<User>> snapshot) {
             Widget child = Center(child: CircularProgressIndicator());
             if (snapshot.hasError) {
